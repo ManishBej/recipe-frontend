@@ -12,8 +12,6 @@ import AddRecipe from './pages/AddRecipe';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import About from './pages/About';
-import EditRecipe from './pages/EditRecipe';
-import AiRecipeAssistant from './pages/AiRecipeAssistant';
 import { AuthProvider, useAuth } from './context/AuthContext';
 
 // Protected Route component
@@ -95,29 +93,13 @@ function AppContent() {
         <Box component="main" sx={{ flexGrow: 1, py: 3 }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route
-              path="/recipes/edit/:id"
-              element={
-                <ProtectedRoute>
-                  <EditRecipe />
-                </ProtectedRoute>
-              }
-            />
-            <Route path="/recipes/:id" element={<RecipeDetail />} />
             <Route path="/recipes" element={<RecipeLibrary />} />
+            <Route path="/recipes/:id" element={<RecipeDetail />} />
             <Route
               path="/add-recipe"
               element={
                 <ProtectedRoute>
                   <AddRecipe />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/ai-assistant"
-              element={
-                <ProtectedRoute>
-                  <AiRecipeAssistant />
                 </ProtectedRoute>
               }
             />
