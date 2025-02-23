@@ -37,11 +37,11 @@
     }
   ],
   "env": {
-    "REACT_APP_API_URL": "https://vercel.com/manish-bejs-projects/recipe-backend/8jZwo8R7GaikjBWajsoXjwP8pb3x/api"
+    "REACT_APP_API_URL": "https://recipe-backend-lqhyuvc93-manish-bejs-projects.vercel.app/api"
   },
   "build": {
     "env": {
-      "REACT_APP_API_URL": "https://vercel.com/manish-bejs-projects/recipe-backend/8jZwo8R7GaikjBWajsoXjwP8pb3x/api"
+      "REACT_APP_API_URL": "https://recipe-backend-lqhyuvc93-manish-bejs-projects.vercel.app/api"
     }
   }
 }
